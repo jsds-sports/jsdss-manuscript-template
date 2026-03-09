@@ -1,25 +1,27 @@
 % Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
-]{agujournal2019}
-
+  12pt]{article}
+\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math}
+  \usepackage{unicode-math} % this also loads fontspec
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
 \usepackage{lmodern}
-\ifPDFTeX\else  
-    % xetex/luatex font selection
+\ifPDFTeX\else
+  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -37,9 +39,6 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
-\setlength{\emergencystretch}{3em} % prevent overfull lines
-\setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
 \makeatletter
 \ifx\paragraph\undefined\else
@@ -65,8 +64,8 @@
 \makeatother
 
 
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -91,45 +90,28 @@
 % Set default figure placement to htbp
 \def\fps@figure{htbp}
 \makeatother
-% definitions for citeproc citations
-\NewDocumentCommand\citeproctext{}{}
-\NewDocumentCommand\citeproc{mm}{%
-  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
-\makeatletter
- % allow citations to break across lines
- \let\@cite@ofmt\@firstofone
- % avoid brackets around text for \cite:
- \def\@biblabel#1{}
- \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
-\makeatother
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
- {\begin{list}{}{%
-  \setlength{\itemindent}{0pt}
-  \setlength{\leftmargin}{0pt}
-  \setlength{\parsep}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-   \setlength{\leftmargin}{\cslhangindent}
-   \setlength{\itemindent}{-1\cslhangindent}
-  \fi
-  % set entry spacing
-  \setlength{\itemsep}{#2\baselineskip}}}
- {\end{list}}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
-\usepackage{url} %this package should fix any errors with URLs in refs.
-\usepackage{lineno}
-\usepackage[inline]{trackchanges} %for better track changes. finalnew option will compile document with changes incorporated.
-\usepackage{soul}
-\linenumbers
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+\usepackage[]{natbib}
+\bibliographystyle{agsm}
+
+
+\addtolength{\oddsidemargin}{-.5in}%
+\addtolength{\evensidemargin}{-1in}%
+\addtolength{\textwidth}{1in}%
+\addtolength{\textheight}{1.7in}%
+\addtolength{\topmargin}{-1in}%
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -171,11 +153,9 @@
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
-
 \usepackage{bookmark}
-
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same} % disable monospaced font for URLs
+\urlstyle{same}
 \hypersetup{
   pdftitle={La Palma Earthquakes},
   pdfauthor={Steve Purves; Rowan Cockett},
@@ -188,18 +168,28 @@
   pdfcreator={LaTeX via pandoc}}
 
 
-\journalname{Earth and Space Science}
-
-\draftfalse
 
 \begin{document}
-\title{La Palma Earthquakes}
-
-\authors{Steve Purves\affil{1}, Rowan Cockett\affil{1}}
-\affiliation{1}{Curvenote, }
-\correspondingauthor{Steve Purves}{steve@curvenote.com}
 
 
+\def\spacingset#1{\renewcommand{\baselinestretch}%
+{#1}\small\normalsize} \spacingset{1}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\date{March 9, 2026}
+\title{\bf La Palma Earthquakes}
+\author{
+Steve Purves\\
+Curvenote\\
+and\\Rowan Cockett\\
+Curvenote\\
+}
+\maketitle
+
+\bigskip
+\bigskip
 \begin{abstract}
 In September 2021, a significant jump in seismic activity on the island
 of La Palma (Canary Islands, Spain) signaled the start of a volcanic
@@ -208,25 +198,26 @@ continually collected and published by the Instituto Geográphico
 Nacional (IGN). \ldots{}
 \end{abstract}
 
-\section*{Plain Language Summary}
-Earthquake data for the island of La Palma from the September 2021
-eruption is found \ldots{}
+\noindent%
+{\it Keywords:} La Palma, Earthquakes
+\vfill
 
-
+\newpage
+\spacingset{1.9} % DON'T change the spacing!
 
 
 \section{Introduction}\label{introduction}
 
 \textsubscript{Source:
-\href{https://quarto-ext.github.io/manuscript-template-rstudio/index.qmd.html}{Article
+\href{https://jsds-sports.github.io/jsds-manuscript-template/index.qmd.html}{Article
 Notebook}}
 
-\phantomsection\label{cell-fig-timeline}
+\protect\phantomsection\label{cell-fig-timeline}
 \begin{figure}[H]
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-pdf/fig-timeline-1.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={An event plot of the years of the last 8 eruptions on La Palma.}]{index_files/figure-pdf/fig-timeline-1.pdf}}
 
 }
 
@@ -235,20 +226,21 @@ Notebook}}
 \end{figure}%
 
 \textsubscript{Source:
-\href{https://quarto-ext.github.io/manuscript-template-rstudio/index.qmd.html}{Article
+\href{https://jsds-sports.github.io/jsds-manuscript-template/index.qmd.html}{Article
 Notebook}}
 
 \textsubscript{Source:
-\href{https://quarto-ext.github.io/manuscript-template-rstudio/index.qmd.html}{Article
+\href{https://jsds-sports.github.io/jsds-manuscript-template/index.qmd.html}{Article
 Notebook}}
 
 Based on data up to and including 1971, eruptions on La Palma happen
 every 79.8 years on average.
 
-Studies of the magma systems feeding the volcano, such as Marrero et al.
-(2019), have proposed that there are two main magma reservoirs feeding
-the Cumbre Vieja volcano; one in the mantle (30-40km depth) which
-charges and in turn feeds a shallower crustal reservoir (10-20km depth).
+Studies of the magma systems feeding the volcano, such as
+\citet{marrero2019}, have proposed that there are two main magma
+reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km
+depth) which charges and in turn feeds a shallower crustal reservoir
+(10-20km depth).
 
 Eight eruptions have been recorded since the late 1400s
 (Figure~\ref{fig-timeline}).
@@ -258,7 +250,7 @@ Data and methods are discussed in Section~\ref{sec-data-methods}.
 Let \(x\) denote the number of eruptions in a year. Then, \(x\) can be
 modeled by a Poisson distribution
 
-\begin{equation}\phantomsection\label{eq-poisson}{
+\begin{equation}\protect\phantomsection\label{eq-poisson}{
 p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
 }\end{equation}
 
@@ -311,7 +303,7 @@ the Canary Islands (Figure~\ref{fig-map}).
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{index_files/figure-latex/notebooks-explore-earthquakes-fig-spatial-plot-output-1.png}}
+\pandocbounded{\includegraphics[keepaspectratio,alt={A scatterplot of earthquake locations plotting latitude against longitude.}]{index_files/figure-latex/notebooks-explore-earthquakes-fig-spatial-plot-output-1.png}}
 
 }
 
@@ -321,7 +313,7 @@ since 2017}
 \end{figure}%
 
 \textsubscript{Source:
-\href{https://quarto-ext.github.io/manuscript-template-rstudio/notebooks/explore-earthquakes-preview.html\#cell-fig-spatial-plot}{Explore
+\href{https://jsds-sports.github.io/jsds-manuscript-template/notebooks/explore-earthquakes-preview.html\#cell-fig-spatial-plot}{Explore
 Earthquakes}}
 
 Figure~\ref{fig-spatial-plot} shows the location of recent Earthquakes
@@ -334,18 +326,9 @@ on La Palma.
 \section*{References}\label{references}
 \addcontentsline{toc}{section}{References}
 
-\phantomsection\label{refs}
-\begin{CSLReferences}{1}{0}
-\vspace{1em}
+\renewcommand{\bibsection}{}
+\bibliography{references.bib}
 
-\bibitem[\citeproctext]{ref-marrero2019}
-Marrero, J., García, A., Berrocoso, M., Llinares, Á., Rodríguez-Losada,
-A., \& Ortiz, R. (2019). Strategies for the development of volcanic
-hazard maps in monogenetic volcanic fields: The example of {La} {Palma}
-({Canary} {Islands}). \emph{Journal of Applied Volcanology}, \emph{8}.
-\url{https://doi.org/10.1186/s13617-019-0085-5}
-
-\end{CSLReferences}
 
 
 
