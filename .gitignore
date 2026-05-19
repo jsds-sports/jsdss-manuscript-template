@@ -11,3 +11,10 @@
 .Rdata
 .httr-oauth
 .DS_Store
+.positai
+
+**/*.quarto_ipynb
+
+# derivative files
+site_libs/
+_freeze/
