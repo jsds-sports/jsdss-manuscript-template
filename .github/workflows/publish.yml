@@ -29,11 +29,12 @@ jobs:
             any::rmarkdown
             any::knitr
             any::tidyverse
+          install-quarto: false  # <-- Blocks the duplicate Quarto install
 
-      # - name: Set up Quarto
-      #   uses: quarto-dev/quarto-actions/setup@v2
-      #   with:
-      #     tinytex: true
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
