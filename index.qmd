@@ -31,7 +31,7 @@ key-points:
 date: last-modified
 bibliography: references.bib
 citation:
-  container-title: Earth and Space Science
+  container-title: Statistics and Data Science in Sports
 number-sections: true
 ---
 
