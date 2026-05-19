@@ -7,9 +7,9 @@
 
 -- Example shortcode that provides a nicely formatted 'LaTeX' string
 function latex()
-  if quarto.doc.is_format("pdf") then
+  if quarto.doc.isFormat("pdf") then
     return pandoc.RawBlock('tex', '{\\LaTeX}')
-  elseif quarto.doc.is_format("html") then
+  elseif quarto.doc.isFormat("html") then
     return pandoc.Math('InlineMath', "\\LaTeX")
   else 
     return pandoc.Span('LaTeX')
