@@ -18,3 +18,4 @@
 # derivative files
 site_libs/
 _freeze/
+*_files/
