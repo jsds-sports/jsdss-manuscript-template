@@ -32,11 +32,11 @@
 
 - The GitHub Actions script that is already part of the template needs to execute correctly.
     - If that works, the paper data and code go to the reproducibility editor for review.
-- **Minor edits:** At any time throughout this process, the reproducibility editor (and other reviewers) can send simple, non-controversial minor edits back to the author via a pull request from `jsds-sports/2026.baumer.736 reviewer1-edits` to `jsds-sports/2026.baumer.736 main` (using the suggestions feature).
 - **Major comments:** Editor collates comments from reviewers posted in OJS and creates Issues for more substantive feedback.
     - One issue per major comment (could be from multiple reviewers).
     - One issue for all typos and minor suggestions.
     - Editor assigns Issues to the author, reviewer, and themselves.
+- **Minor edits:** At any time throughout this process, the reproducibility editor (and other reviewers) can send simple, non-controversial minor edits back to the author via a pull request from `jsds-sports/2026.baumer.736 reviewer1-edits` to `jsds-sports/2026.baumer.736 main` (using the suggestions feature).
 
 ## 4. Revision Phase
 
