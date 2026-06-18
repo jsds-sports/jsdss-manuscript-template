@@ -31,7 +31,7 @@
 
 - The GitHub Actions script that is already part of the template needs to execute correctly.
     - If that works, the paper data and code go to the reproducibility editor for review.
-- **Major comments:** Editor collates comments from reviewers posted in OJS and creates Issues for more substantive feedback.
+- **Major comments:** Editor collates comments from reviewers posted in OJS and creates [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues) for more substantive feedback.
     - One Issue per major comment (could be from multiple reviewers).
     - One Issue for all typos and minor suggestions.
     - Editor assigns Issues to the author, reviewer, and themselves.
