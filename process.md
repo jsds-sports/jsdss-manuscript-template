@@ -9,6 +9,7 @@
     - Give the repo a reasonable name of your choice.
     - You may choose to change the visibility to **Private** while working on the project.
     - Click **Create Repo**.
+- Clone repo to your machine.
 - Write paper with code and data.
 - Submit PDF to the OJS system at Charlotte.
 
@@ -20,11 +21,16 @@
     - The GitHub Actions script that is already part of the template needs to execute correctly. This will be executed automatically when the author pushes changes to the repo on GitHub.
 - Upon successful rendering via GitHub Actions in the **author's** repo, the reproducibility editor **forks** the author's repo into the `jsds-sports` GitHub Organization.
     - At this point, the author should create a [**release**](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) at the time the repo is forked.
-    - *JSDSS* editors rename the repo to match the OJS paper ID tracking system (e.g., `2026-baumer-413`).
-    - *JSDSS* editors also create an `R0` release in the forked repo.
-    - Editor goes to **Settings → Pages** and, in the branch section, chooses `gh-pages`.
-    - Editor goes to **Actions**, selects **Quarto Publish** on the left, and selects **Run Workflow** on the right to confirm GitHub Actions has no problems.
-    - Author adds the `jsds-sports/2026-baumer-413` repo as a `downstream` remote (via [`git remote`](https://git-scm.com/docs/git-remote)).  
+    After it is forked, the author also makes the repo public (perhaps temporarily), to give the Editors Change Visibility permissions when the article is ready to be published. The Editors won't change Private to Public until final publication. If the author doesn't want the repo to be public yet, they can immediately Change Visibility to Private again. Otherwise, the author can leave it as Public.
+    - *JSDSS* editors go to Settings and **we should go to Org settings and change these things there because we want them to apply to all repos by default.**
+        - Rename the repo to match the OJS paper ID tracking system (e.g., `2026-baumer-413`).
+        - Enable Issues
+        - Protect main branch 
+        - Invites Authors as collaborators with direct access and **Write** permissions 
+        - Create an `R0` release in the forked repo.
+    - (Needed one private, not needed one public. ) Editor goes to **Settings → Pages** and, in the branch section, chooses `gh-pages`.
+    - (Maybe remove, so say to check it runs automatically. It Auto ran when it was public, but does not auto run when it's private. ) Editor goes to **Actions**, selects **Quarto Publish** on the left, and selects **Run Workflow** on the right to confirm GitHub Actions has no problems.
+    - (Maybe remove) Author adds the `jsds-sports/2026-baumer-413` repo as a `downstream` remote (via [`git remote`](https://git-scm.com/docs/git-remote)).  
     
 
 ## 3. *JSDSS* Reproducibility Review Process
