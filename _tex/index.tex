@@ -156,10 +156,14 @@
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
+% fallback for those not using the hyperref driver hyperxmp:
+\makeatletter
+\@ifundefined{xmpquote}{\newcommand{\xmpquote}[1]{#1}}{}
+\makeatother
 \hypersetup{
   pdftitle={La Palma Earthquakes},
   pdfauthor={Steve Purves; Rowan Cockett},
-  pdfkeywords={La Palma, Earthquakes},
+  pdfkeywords={\xmpquote{La Palma}, \xmpquote{Earthquakes}},
   colorlinks=true,
   linkcolor={blue},
   filecolor={Maroon},
@@ -178,7 +182,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\date{July 1, 2026}
+\date{July 28, 2026}
 \title{\bf La Palma Earthquakes}
 \author{
 Steve Purves\\
