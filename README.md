@@ -20,7 +20,7 @@ This is a template repo for generating a manuscript from Quarto that accompanies
 - Include a URL for the repo in the acknowledgements section, or add the editor as a collaborator to the repo.
 - Generate the PDF.
 
-Alternatively, authors can choose to submit a PDF created in another manner. However, note that using [our template](https://github.com/jsds-sports/jsdss-manuscript-template) will eventually be required before publication if your manuscript proceeds along the review process and into the [GitHub review stage](#sec-github). 
+Alternatively, authors can choose to submit a PDF created in another manner. However, note that using [our template](https://github.com/jsds-sports/jsdss-manuscript-template) will eventually be required before publication if your manuscript proceeds along the review process and into the GitHub review stage.
 
 ---
 
