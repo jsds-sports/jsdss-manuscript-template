@@ -15,10 +15,10 @@ This is a template repo for generating a manuscript from Quarto that accompanies
     - Give the repo a reasonable name of your choice.
     - You may choose to change the visibility to **Private** while working on the project.
     - Click **Create Repo**.
-- Clone repo to your machine.
-- Write paper with code and data. Use the Quarto template for the paper.
-- Include a URL for the repo in the Acknowledgement section, or add editor as a collaborator to repo
-- Generate PDF
+- Clone the repo to your machine.
+- Write your paper with code and data using the Quarto template.
+- Include a URL for the repo in the acknowledgements section, or add the editor as a collaborator to the repo.
+- Generate the PDF.
 
 Alternatively, authors can choose to submit a PDF created in another manner. However, note that using [our template](https://github.com/jsds-sports/jsdss-manuscript-template) will eventually be required before publication if your manuscript proceeds along the review process and into the [GitHub review stage](#sec-github). 
 
