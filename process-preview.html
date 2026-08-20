@@ -130,7 +130,7 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7fca231f0f6bfd3bec1af756033c583c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b89755862c00f08386c47aeabbd074f3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
      <script async="" src="https://hypothes.is/embed.js"></script>
 <script>
   window.document.addEventListener("DOMContentLoaded", function (_event) {
@@ -324,7 +324,7 @@ Caution
 <section id="sec-github-init" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="sec-github-init"><span class="header-section-number">3</span> Initiation of GitHub Review</h2>
 <ul>
-<li>The author is responsible for creating a GitHub repository and putting the paper contents in <em>JSDSS</em> Quarto format, as described in <a href="#sec-prepare" class="quarto-xref">Section&nbsp;1.1</a>.</li>
+<li>The author is responsible for creating a GitHub repository and putting the paper contents in <em>JSDSS</em> Quarto format, as described in <a href="#sec-prepare" class="quarto-xref">Section&nbsp;1.1</a>. The repo at this point should be private.</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled" title="Brian">
 <div class="callout-header d-flex align-content-center">
@@ -343,33 +343,19 @@ Caution
 <li>The GitHub Actions script that is already part of the template needs to execute correctly. This will be executed automatically when the author pushes changes to the repo on GitHub.</li>
 <li>Upon successful rendering via GitHub Actions in the <strong>author’s</strong> repo, the AE <strong>forks</strong> the author’s repo into the <code>jsds-sports</code> GitHub Organization.
 <ul>
+<li>When forking, uncheck “Copy the main branch only”.</li>
 <li>At this point, the author should create a <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases"><strong>release</strong></a> at the time the repo is forked.</li>
-<li>After it is forked, the author also makes the repo public (perhaps temporarily), to give the AE the “Change Visibility” permissions when the article is ready to be published. The AE won’t change Private to Public until final publication.</li>
+<li>After it is forked, the author also makes the repo public (perhaps temporarily). This gives the AE the permissions to click the “Change Visibility” button in Settings. This will be used to make the repo public when the article is ready to be published. The AE keeps the visibility private for the duration of the internal review process. The AE won’t change Private to Public until final publication.</li>
 <li>If the author doesn’t want the repo to be public yet, they can immediately Change Visibility to Private again. Otherwise, the author can leave it as Public.</li>
+<li>From this point on, all official reviews and edits will be done in the journal’s version of the repo. The author is welcome to push changes to their personal repo as well, if desired. But all official issues, pull requests, etc., will occur in the journal’s version of the repo.</li>
 <li>AE goes to Settings page
 <ul>
 <li>General
 <ul>
 <li>Check that Change Visibility permissions are available. Otherwise, asks author to do the previous step.</li>
-<li>Rename the repo to match the OJS paper ID tracking system (e.g., <code>2026-baumer-413</code>).</li>
+<li>Rename the repo to match the OJS paper ID tracking system (e.g., <code>2026-001-baumer-beannumber</code>).</li>
 <li>Enable Issues</li>
-</ul></li>
-<li>Rules, rulesets
-<ul>
-<li>Create Protect Main Branch rule (ZZZ can we create a org-wide template?)
-<ul>
-<li>New branch ruleset</li>
-<li>Default branch (main)</li>
-<li>Click Require a pull request before merging</li>
-</ul></li>
-</ul></li>
-<li>Pages
-<ul>
-<li>In the branch section, chooses <code>gh-pages</code>.</li>
-</ul></li>
-<li>Actions
-<ul>
-<li>Select <strong>Quarto Publish</strong> on the left, and select <strong>Run Workflow</strong> on the right to confirm GitHub Actions has no problems. (It automatically runs if public, but not if private.)</li>
+<li>The GitHub Actions script that is already part of the template needs to execute correctly. If so, the previous instructions on Pages and Actions are not needed.</li>
 </ul></li>
 <li>Collaborators and Teams
 <ul>
@@ -385,7 +371,6 @@ Caution
 <section id="sec-review" class="level3" data-number="4.1">
 <h3 data-number="4.1" class="anchored" data-anchor-id="sec-review"><span class="header-section-number">4.1</span> Review phase</h3>
 <ul>
-<li>The GitHub Actions script that is already part of the template needs to execute correctly.</li>
 <li><strong>Main comments:</strong> AE collates comments from reviewers posted in OJS and creates <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues">GitHub Issues</a> for more substantive feedback.
 <ul>
 <li>One Issue per main comment (could be from multiple reviewers).</li>
