@@ -69,31 +69,25 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 
 ## Initiation of GitHub Review {#sec-github-init}
 
-- The author is responsible for creating a GitHub repository and putting the paper contents in *JSDSS* Quarto format, as described in @sec-prepare. 
+- The author is responsible for creating a GitHub repository and putting the paper contents in *JSDSS* Quarto format, as described in @sec-prepare. The repo at this point should be private.
 
 ::: {.callout-note title="Brian"}
 (ZZZ add pro tips, like `pandoc` code. We should try this first.)
 :::
 
 - The GitHub Actions script that is already part of the template needs to execute correctly. This will be executed automatically when the author pushes changes to the repo on GitHub.
-- Upon successful rendering via GitHub Actions in the **author's** repo, the AE **forks** the author's repo into the `jsds-sports` GitHub Organization.
+- Upon successful rendering via GitHub Actions in the **author's** repo, the AE **forks** the author's repo into the `jsds-sports` GitHub Organization. 
+    - When forking, uncheck "Copy the main branch only". 
     - At this point, the author should create a [**release**](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) at the time the repo is forked.
-    - After it is forked, the author also makes the repo public (perhaps temporarily), to give the AE the "Change Visibility" permissions when the article is ready to be published. The AE won't change Private to Public until final publication. 
-    - If the author doesn't want the repo to be public yet, they can immediately Change Visibility to Private again. Otherwise, the author can leave it as Public.
+    - After it is forked, the author also makes the repo public (perhaps temporarily). This gives the AE the permissions to click the "Change Visibility" button in Settings.  This will be used to make the repo public when the article is ready to be published. The AE keeps the visibility private for the duration of the internal review process. The AE won't change Private to Public until final publication. 
+    - If the author doesn't want the repo to be public yet, they can immediately Change Visibility to Private again. Otherwise, the author can leave it as Public. 
+    - From this point on, all official reviews and edits will be done in the journal's version of the repo. The author is welcome to push changes to their personal repo as well, if desired. But all official issues, pull requests, etc., will occur in the journal's version of the repo. 
     - AE goes to Settings page
         - General
             - Check that Change Visibility permissions are available. Otherwise, asks author to do the previous step.
-            - Rename the repo to match the OJS paper ID tracking system (e.g., `2026-baumer-413`).
+            - Rename the repo to match the OJS paper ID tracking system (e.g., `2026-001-baumer-beannumber`).
             - Enable Issues 
-        - Rules, rulesets
-            - Create Protect Main Branch rule (ZZZ can we create a org-wide template?)
-                - New branch ruleset
-                - Default branch (main)
-                - Click Require a pull request before merging
-        - Pages
-            - In the branch section, chooses `gh-pages`. 
-        - Actions
-            - Select **Quarto Publish** on the left, and select **Run Workflow** on the right to confirm GitHub Actions has no problems. (It automatically runs if public, but not if private.)
+            - The GitHub Actions script that is already part of the template needs to execute correctly. If so, the previous instructions on Pages and Actions are not needed.
         - Collaborators and Teams
             -  Invite Authors as collaborators with direct access and **Write** permissions 
     - AE goes to main repo page and creates an `R0` release in the forked repo.
@@ -102,7 +96,7 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 
 ### Review phase {#sec-review}
 
-- The GitHub Actions script that is already part of the template needs to execute correctly.
+
 - **Main comments:** AE collates comments from reviewers posted in OJS and creates [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues) for more substantive feedback.
     - One Issue per main comment (could be from multiple reviewers).
     - One Issue for all typos and minor suggestions.
