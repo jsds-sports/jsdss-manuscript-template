@@ -5,6 +5,8 @@ date: 2026-08-21
 number-sections: true
 ---
 
+Role-specific checklists: [authors](instructions-authors.md) · [reviewers](instructions-reviewers.md) · [associate editors](instructions-aes.md)
+
 ## Author Submission
 
 ### Prepare manuscript {#sec-prepare}
@@ -71,7 +73,8 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 
 - The author is responsible for creating a GitHub repository and putting the paper contents in *JSDSS* Quarto format, as described in @sec-prepare. The repo at this point should be private.
 - The GitHub Actions script that is already part of the template needs to execute correctly. This will be executed automatically when the author pushes changes to the repo on GitHub.
-- Upon successful rendering via GitHub Actions in the **author's** repo, the AE **forks** the author's repo into the `jsds-sports` GitHub Organization. 
+- Upon successful rendering via GitHub Actions in the **author's** repo, the author invites the AE to the repo. 
+- The AE **forks** the author's repo into the `jsds-sports` GitHub Organization. 
 
     - When forking, uncheck "Copy the main branch only". 
     - The journal fork must be **private** when it is created. The AE keeps it private for the duration of the internal review process and does not change it to Public until final publication.
@@ -115,7 +118,7 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
     - **Reviewers:** the peer reviewers for that Issue (not the authors).
     - **Assignees:** the authors. The AE assigns the lead author; the lead author may then assign a co-author if desired. 
 - The author repeats for each Issue. If there are 5 Issues there will be 5 branches and 5 pull requests.
-- If the GitHub Actions script works, all assigned Reviewers have approved, and the AE is satisfied, the AE merges the pull request.
+- If the GitHub Actions script works, all assigned Reviewers have approved, and the AE is satisfied, the AE merges the pull request. Otherwise, the review (@sec-review) and/or revision (@sec-revise) phases may be repeated until the AE is satisfied.
 - After all pull requests are merged, AE creates an `R1` release.
 
 Note that the following GitHub Settings are enabled by default: 
@@ -124,15 +127,12 @@ Note that the following GitHub Settings are enabled by default:
 - Required Approvals is set to 1, but the AE should check that all Reviewers assigned to that PR have approved.
 - If a commit is made after an approval has been given, that approval is stale and the PR needs to be re-approved by Reviewers
 
-
 ### Review and revise phase iteration
 
 - AE makes *exactly one* of the following recommendations to Editor:
-    - **Reject**: The paper has fatal flaws that prevent publication in *JSDSS*
-    - **Revise and resubmit**: Continue the review process
-    - **Accept**: The paper is ready for publication
+    - **Reject**: The paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them.
+    - **Accept**: The paper is ready for publication.
 - The Editor will make a decision based on the AE’s recommendation.
-- The review (@sec-review) and revision (@sec-revise) phases may be repeated until the Editor is satisfied.
 
 ## Production Phase
 
@@ -144,7 +144,3 @@ Note that the following GitHub Settings are enabled by default:
 - Editor adds that URL and paper metadata to the `jsds-sports.github.io` main website.
 - Editor adds PDF of the paper to Project Euclid.  
 - Paper is now available via Project Euclid and the GitHub Pages site.
-
-::: {.callout-note title="Brian"}
-- ZZZ may need to include something about checking OJS and availability on OJS
-:::
