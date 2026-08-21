@@ -18,7 +18,7 @@ You may submit a PDF produced another way. The [Quarto template](https://github.
 ## Initial review
 
 - Wait for the Editor's decision, either **Reject**, **Revise and resubmit**, or **Invite to GitHub Review Process**. Then you may continue or withdraw.
-- **Revise and resubmit** can happen more than once. If you continue, revise and wait for the Editor again.
+- **Revise and resubmit** can happen more than once. If you continue, revise the PDF, resubmit, and wait for the Editor again.
 - **Reject** and **Invite to GitHub Review Process** are terminal initial-review decisions.
 - An invitation to GitHub review is **not** a conditional acceptance.
 
@@ -52,7 +52,7 @@ From this point, do all official work on the journal fork. You may still push to
 
 ## Decision
 
-- Wait for the AE to recommend **Reject** (the paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them) or **Accept** (the paper is ready for publication), and for the Editor to decide.
+- Wait for the AE to recommend **Reject** (the paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them) or **Accept** (all issues have been addressed by the authors; the paper is ready for publication), and for the Editor to decide.
 
 ## Production
 

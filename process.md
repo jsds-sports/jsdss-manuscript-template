@@ -65,7 +65,7 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 ### Author decision
 
 - Based on the Editor's decision and the AE and reviewer feedback, the author may choose to continue the review process, or withdraw the paper. 
-- A decision of **Revise and resubmit** could occur more than once. 
+- A decision of **Revise and resubmit** could occur more than once. The author revises the PDF and resubmits. The AE may ask the reviewers to read the later PDF.
 - A decision of **Reject** or **Invite to GitHub Review Process** is terminal. 
 
 
@@ -92,7 +92,7 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
         - The GitHub Actions script that is already part of the template needs to execute correctly. 
     - Collaborators and Teams
         - Invite Authors and Reviewers as collaborators with direct access and **Write** permissions
-- AE goes to the main page of the journal fork and creates an `R0` [release](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases).
+- AE goes to the main page of the journal fork and creates an `R0` [release](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases). 
 
 ## *JSDSS* GitHub Review Process {#sec-github}
 
@@ -102,14 +102,14 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
     - One Issue per main comment (could be from multiple reviewers).
     - One Issue for all typos and minor suggestions.
     - AE assigns Issues to the author, reviewer(s) that gave feedback related to that Issue, and themself.
-- **Minor edits:** At any time throughout this process, the AE (and other reviewers) can send simple, non-controversial minor edits back to the author via a pull request from `jsds-sports/2026-001-lastname-GHusername reviewer1-edits` to `jsds-sports/2026-001-lastname-GHusername main` (using the suggestions feature).
+- **Minor edits:** At any time throughout this process, the AE (and other reviewers) can send simple, non-controversial minor edits back to the author via a pull request from `jsds-sports/2026-001-lastname-GHusername reviewer1-minor-edits` to `jsds-sports/2026-001-lastname-GHusername main` (using the suggestions feature).
     - Assign the author as **Assignee**. In this case the author is reviewing the AE's proposed edits, so also request the author's review. The AE still merges.
 
 ### Revision Phase {#sec-revise}
 
 - Author will respond to GitHub Issues (can ask clarifications, push back, etc.) by comment via the web interface.
 - Author edits the journal organization repo, not their own repo. 
-    - Commits should be tagged to Issues.
+    - Commits should be linked to Issues.
 - For each Issue, the author
     - Creates a new branch on the JSDSS repo `jsds-sports/2026-001-lastname-GHusername` to address that Issue, and makes edits on that branch.
     - Creates a pull request from the branch to `jsds-sports/2026-001-lastname-GHusername main` and can send commits to this branch as they see fit (may need to **Change Base**)
@@ -124,14 +124,14 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 Note that the following GitHub Settings are enabled by default: 
 
 - Only AEs can merge PRs.
-- Required Approvals is set to 1, but the AE should check that all Reviewers assigned to that PR have approved.
+- Required Approvals is set to 1 (a floor, not the decision rule), but the AE should check that all Reviewers assigned to that PR have approved.
 - If a commit is made after an approval has been given, that approval is stale and the PR needs to be re-approved by Reviewers
 
 ### Review and revise phase iteration
 
 - AE makes *exactly one* of the following recommendations to Editor:
     - **Reject**: The paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them.
-    - **Accept**: The paper is ready for publication.
+    - **Accept**: All issues have been addressed by the authors. The paper is ready for publication.
 - The Editor will make a decision based on the AE’s recommendation.
 
 ## Production Phase
@@ -140,6 +140,7 @@ Note that the following GitHub Settings are enabled by default:
 - Editor obtains a DOI for the paper.
 - Editor adds watermark and logo to the paper for authenticity.
 - Editor creates a `final` release and the repo is frozen.
+- AE changes the journal repo from Private to Public.
 - GitHub Pages is turned **ON** and the paper is available in HTML/PDF/Word formats at `https://jsds-sports.github.io/2026-001-lastname-GHusername/`.
 - Editor adds that URL and paper metadata to the `jsds-sports.github.io` main website.
 - Editor adds PDF of the paper to Project Euclid.  

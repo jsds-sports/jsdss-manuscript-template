@@ -17,7 +17,7 @@ This is the Associate Editor (AE) view of the review process. The full process i
     - **Invite to GitHub Review Process**: a path exists and you want a deeper review.
 - Wait for the Editor to decide.
 
-An invitation to GitHub review is **not** a conditional acceptance. **Reject** and **Invite to GitHub Review Process** are terminal initial-review decisions. **Revise and resubmit** may happen more than once.
+An invitation to GitHub review is **not** a conditional acceptance. **Reject** and **Invite to GitHub Review Process** are terminal initial-review decisions. **Revise and resubmit** may happen more than once. If it does, the author revises and resubmits the PDF; you may ask the reviewers to read the later PDF.
 
 ## Start GitHub review
 
@@ -56,7 +56,7 @@ All official Issues and pull requests happen on the journal fork.
 
 ## Decision
 
-- Make *exactly one* recommendation to the Editor: **Reject** (the paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them) or **Accept** (the paper is ready for publication).
+- Make *exactly one* recommendation to the Editor: **Reject** (the paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them) or **Accept** (all issues have been addressed by the authors; the paper is ready for publication).
 - Wait for the Editor to decide.
 
 ## Production
