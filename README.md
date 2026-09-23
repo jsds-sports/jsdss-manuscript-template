@@ -29,4 +29,4 @@ Alternatively, authors can choose to submit a PDF created in another manner. How
 
 ### Submit PDF
 
-- Follow the [Submit PDF steps in the canonical instructions](instructions-all.md#submit-pdf), including registration and OJS submission.
+- Follow the [Submit PDF steps in the instructions](instructions-authors.md#submit-pdf), including registration and OJS submission.
