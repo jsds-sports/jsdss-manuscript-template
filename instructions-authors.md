@@ -2,7 +2,7 @@
 title: "JSDSS instructions for authors"
 ---
 
-This is the author view of the review process. The full process is in [process.md](process.md).
+This is the author view of the review process. The full process is in [instructions-all.md](instructions-all.md).
 
 ## Prepare and submit
 
@@ -11,14 +11,15 @@ This is the author view of the review process. The full process is in [process.m
     - You may keep the repo **Private** while you work.
 - Clone the repo, write the paper with code and data in the Quarto template, and generate a PDF.
 - Include a URL for the repo in the Acknowledgement section, or add an editor as a collaborator.
-- Submit the PDF to the [OJS system at Charlotte](https://journals.charlotte.edu/).
+- Register for *JSDSS* by sending an email to jsds dot sports at gmail dot com with your full name, manuscript title, and preferred contact email.
+- Submit the PDF to the [*JSDSS* OJS site](https://journals.charlotte.edu/index.php/jsdss/index).
 
-You may submit a PDF produced another way. The [Quarto template](https://github.com/jsds-sports/jsdss-manuscript-template) will be required if the paper is invited to the [GitHub review stage](process.md#sec-github).
+You may submit a PDF produced another way. The [Quarto template](https://github.com/jsds-sports/jsdss-manuscript-template) will be required if the paper is invited to the GitHub review stage.
 
 ## Initial review
 
 - Wait for the Editor's decision, either **Decline**, **Request Revisions**, or **Invite to GitHub Review Process**. Then you may continue or withdraw.
-- **Request revisions** can happen more than once. If you continue, revise the PDF, resubmit, and wait for the Editor again.
+- **Request Revisions** can happen more than once. If you continue, revise the PDF, resubmit, and wait for the Editor again.
 - **Decline** and **Invite to GitHub Review Process** are terminal initial-review decisions.
 - An invitation to GitHub review is **not** a conditional acceptance.
 
@@ -26,12 +27,12 @@ You may submit a PDF produced another way. The [Quarto template](https://github.
 
 If you are invited and choose to continue:
 
-- Put the paper in *JSDSS* Quarto format in a GitHub repo, as in the prepare step, if you haven't already. Keep that repo private.
-- Push to GitHub. Hopefully the GitHub Actions workflow renders successfully. If not, you can fix this later.
+- Put the paper in *JSDSS* Quarto format in a GitHub repo, as in the prepare step, if you haven't already. You may ask for help getting the paper into that format. Keep that repo private.
+- Push to GitHub. Review can start without a successful GitHub Actions run. GitHub Actions must succeed for a pull request to merge.
 - Invite the AE to your repo.
 - Wait for the AE to fork your repo into the `jsds-sports` organization (the journal fork stays **private**).
 - After the fork exists, make **your** repo public (you may switch it back to private immediately). This lets the AE use **Change Visibility** on the journal fork at publication.
-- Wait for the AE to finish journal-fork setup: confirm Change Visibility, rename the repo (e.g. `jsds-sports/YYYY-NNN-lastname-GHusername`), enable Issues, invite you as a collaborator with **Write**, and create the `R0` release.
+- Wait for the AE to finish journal-fork setup: confirm Change Visibility, rename the repo (e.g. `YYYY-NNN-lastname-GHusername`), enable Issues, invite you as a collaborator with **Write**, and create the `R0` release. Only the AE creates `R0`.
 
 From this point, do all official work on the journal fork. You may still push to your personal repo if you want.
 
@@ -47,8 +48,7 @@ From this point, do all official work on the journal fork. You may still push to
 - If there are 5 Issues, there will be 5 branches and 5 pull requests.
 - After each pull request is open, wait for the AE to set **Reviewers** (the peer reviewers) and **Assignees** (you). If you are the lead author, you may then assign a co-author.
 - Wait for the assigned Reviewers to approve. If you push a commit after an approval, that approval is stale; wait for the Reviewers to approve again.
-- Wait for the AE to merge. Only AEs merge pull requests. If the AE is not yet satisfied, the review and/or revision steps may repeat until they are.
-- If Github Actions workflow runs successfully, that's great! Otherwise, some steps may need to be taken to ensure the `.qmd` document generates the final document. See Actions tab in GitHub.
+- Wait for the AE to merge. GitHub Actions must succeed for the pull request to merge. Only AEs merge pull requests. If the AE is not yet satisfied, the review and/or revision steps may repeat until they are.
 - Wait for the AE to create an `R1` release after all pull requests are merged.
 
 ## Decision

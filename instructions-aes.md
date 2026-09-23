@@ -2,36 +2,36 @@
 title: "JSDSS instructions for associate editors"
 ---
 
-This is the Associate Editor (AE) view of the review process. The full process is in [process.md](process.md).
+This is the Associate Editor (AE) view of the review process. The full process is in [instructions-all.md](instructions-all.md).
 
 ## Initial review
 
 - Wait for the Editor to decide the paper is appropriate for *JSDSS* and to assign it to you.
 - Read the paper and decide whether it merits a full review.
     - If not, recommend **Decline** without further review.
-    - If it does, assign **at least two** peer reviewers to read the PDF and submit written feedback.
-- Wait for the reviewers to submit their feedback in writing via JSDSS website.
+    - If it does, assign **at least two** peer reviewers to read the PDF and submit written feedback on the JSDSS OJS site.
+- Wait for the reviewers to submit their feedback in writing on the JSDSS OJS site.
 - Combine the reviewers' feedback with your own and make *exactly one* recommendation:
     - **Decline**: no viable path to publication.
-    - **Request revisions**: a path exists, but substantive problems must be fixed before GitHub review.
+    - **Request Revisions**: a path exists, but substantive problems must be fixed before GitHub review.
     - **Invite to GitHub Review Process**: a path exists for publication of this manuscript and you want a deeper review.
 - Wait for the Editor to decide.
 
 An invitation to GitHub review is **not** a conditional acceptance. 
 **Decline** and **Invite to GitHub Review Process** are terminal initial-review decisions. 
-**Request revisions** may happen more than once. If it does, the author revises and resubmits the PDF; you may ask the reviewers to read the later PDF.
+**Request Revisions** may happen more than once. If it does, the author revises and resubmits the PDF; you may ask the reviewers to read the later PDF.
 
 ## Start GitHub review
 
 If the Editor invites the paper and the author continues:
 
-- Wait for the author to put the paper in *JSDSS* Quarto format in a private GitHub repo, for GitHub Actions on **their** repo to render successfully, and for the author to invite you to that repo. The authors can ask for assistance in getting the paper into the appropriate format.
+- Wait for the author to put the paper in *JSDSS* Quarto format in a private GitHub repo and to invite you to that repo. The authors can ask for assistance in getting the paper into the appropriate format. Review can start without a successful GitHub Actions run. GitHub Actions must succeed for a pull request to merge.
 - Fork the author's repo into the `jsds-sports` organization.
     - Uncheck "Copy the main branch only".
     - The journal fork must be **private** when created. Keep it private until final publication.
 - Wait for the author to make **their** repo public (they may switch it back to private). That is what lets you use **Change Visibility** on the journal fork later.
 - On the journal fork, open Settings:
-    - General: confirm Change Visibility is available (if not, ask the author to make their repo public); rename to the OJS id (e.g. `2026-001-lastname-GHusername`); enable Issues; confirm GitHub Actions renders.
+    - General: confirm Change Visibility is available (if not, ask the author to make their repo public); rename to the OJS id (e.g. `YYYY-NNN-lastname-GHusername`); enable Issues.
     - Collaborators and Teams: invite authors and reviewers with **Write** permissions.
 - On the journal fork, create the `R0` [release](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases). Only you create `R0`. The author does not create a release on their repo.
 
@@ -53,7 +53,7 @@ All official Issues and pull requests happen on the journal fork.
     - **Assignees:** the authors. Assign the lead author; they may assign a co-author.
 - Wait for every Reviewer assigned to that pull request to approve. Required Approvals is set to 1; that is a floor. Check that all assigned Reviewers have approved before you merge.
 - If a commit is pushed after an approval, that approval is stale. Wait for the Reviewers to approve again.
-- If GitHub Actions succeeds, all assigned Reviewers have approved, and you are satisfied, merge the pull request. Only AEs merge. Otherwise, the review and/or revision phases may be repeated until you are satisfied.
+- GitHub Actions must succeed for a pull request to merge. If Actions succeeds, all assigned Reviewers have approved, and you are satisfied, merge the pull request. Only AEs merge. Otherwise, the review and/or revision phases may be repeated until you are satisfied.
 - After all pull requests are merged, create an `R1` release.
 
 ## Decision

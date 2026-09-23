@@ -2,11 +2,11 @@
 title: "JSDSS instructions for reviewers"
 ---
 
-This is the reviewer view of the review process. The full process is in [process.md](process.md).
+This is the reviewer view of the review process. The full process is in [instructions-all.md](instructions-all.md).
 
 ## Initial review (OJS)
 
-- Read the PDF and submit your feedback in writing in OJS.
+- Read the PDF and submit your feedback in writing on the JSDSS OJS site.
 - Wait for the AE to combine the reviews and recommend **Decline**, **Request Revisions**, or **Invite to GitHub Review Process**, and for the Editor to decide.
 
 If the decision is **Decline**, you are done. If it is **Request Revisions**, wait for the AE to ask you to read a later PDF, if they do.
@@ -24,7 +24,7 @@ If the paper is invited to GitHub review:
 - Wait for the AE to add you as a **Reviewer** on the pull requests that match your comments. You should be a GitHub Reviewer, not an Assignee (Assignees are the authors).
 - Review those pull requests and approve when the Issue is addressed.
 - If the author pushes a commit after you approve, that approval is stale. Review the new commits and approve again.
-- Wait for the AE to confirm that every assigned Reviewer has approved, that GitHub Actions succeeded, and to merge. Only AEs merge. If the AE is not yet satisfied, review and/or revision may repeat.
+- Wait for the AE to merge. GitHub Actions must succeed for the pull request to merge. Review can start without a successful run. The AE confirms that every assigned Reviewer has approved. Only AEs merge. If the AE is not yet satisfied, review and/or revision may repeat.
 - Wait for the AE to create an `R1` release after all pull requests are merged.
 
 ## Decision

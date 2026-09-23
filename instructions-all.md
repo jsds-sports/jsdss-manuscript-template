@@ -50,11 +50,11 @@ Alternatively, authors can choose to submit a PDF created in another manner. How
 
 - An [Associate Editor](https://journals.charlotte.edu/jsdss/about/editorialTeam) will read the paper and determine if it merits a full review in *JSDSS*. 
     - If the paper does not merit a full review, it will be **declined** without further review. 
-    - If the paper does merit a full review, the AE will assign **at least two** peer reviewers to read the PDF and submit their feedback in writing.
+    - If the paper does merit a full review, the AE will assign **at least two** peer reviewers to read the PDF and submit their feedback in writing on the JSDSS OJS site.
 - The AE will combine the reviewers' feedback and their own and come to *exactly one* of the following recommendations:
     - **Decline**: The paper does not have a viable path to publication in *JSDSS*.
     - **Request Revisions**: The AE sees a path to publication, but the paper has substantive shortcomings that need to be addressed before any potential GitHub Review Process is initiated. 
-    - **Invite to [GitHub Review Process](#sec-github-init)**: The AE sees a path to publication and wishes to initiate a deeper review. 
+    - **Invite to GitHub Review Process**: The AE sees a path to publication and wishes to initiate a deeper review. 
 - The Editor will make a decision based on the AE's recommendation. 
 
 An invitation to the GitHub Review Process is **not** a conditional acceptance. 
@@ -68,9 +68,9 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 
 ## Initiation of GitHub Review 
 
-- The author is responsible for creating a GitHub repository and putting the paper contents in *JSDSS* Quarto format, as described in @sec-prepare. The repo at this point should be private.
-- The GitHub Actions script that is already part of the template needs to execute correctly. This will be executed automatically when the author pushes changes to the repo on GitHub.
-- Upon successful rendering via GitHub Actions in the **author's** repo, the author invites the AE to the repo. 
+- The author is responsible for creating a GitHub repository and putting the paper contents in *JSDSS* Quarto format, as described in the Prepare manuscript section. The author may ask for help getting the paper into that format. The repo at this point should be private.
+- The GitHub Actions script that is already part of the template runs automatically when the author pushes changes to the repo on GitHub. Review can start without a successful run. GitHub Actions must succeed for a pull request to merge.
+- The author invites the AE to the repo. 
 - The AE **forks** the author's repo into the `jsds-sports` GitHub Organization. 
 
     - When forking, uncheck "Copy the main branch only". 
@@ -84,12 +84,11 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 - AE goes to Settings page
     - General
         - Check that Change Visibility permissions are available. Otherwise, asks author to do the previous step.
-        - Rename the repo to match the OJS paper ID tracking system (e.g., `2026-001-lastname-GHusername`).
+        - Rename the repo to match the OJS paper ID tracking system (e.g., `YYYY-NNN-lastname-GHusername`).
         - Enable Issues 
-        - The GitHub Actions script that is already part of the template needs to execute correctly. 
     - Collaborators and Teams
         - Invite Authors and Reviewers as collaborators with direct access and **Write** permissions
-- AE goes to the main page of the journal fork and creates an `R0` [release](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases). 
+- AE goes to the main page of the journal fork and creates an `R0` [release](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases). Only the AE creates `R0`. The author does not create a release on their own repo. 
 
 ## *JSDSS* GitHub Review Process {#sec-github}
 
@@ -99,7 +98,7 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
     - One Issue per main comment (could be from multiple reviewers).
     - One Issue for all typos and minor suggestions.
     - AE assigns Issues to the author, reviewer(s) that gave feedback related to that Issue, and themself.
-- **Minor edits:** At any time throughout this process, the AE (and other reviewers) can send simple, non-controversial minor edits back to the author via a pull request from `jsds-sports/2026-001-lastname-GHusername reviewer1-minor-edits` to `jsds-sports/2026-001-lastname-GHusername main` (using the suggestions feature).
+- **Minor edits:** At any time throughout this process, the AE (and other reviewers) can send simple, non-controversial minor edits back to the author via a pull request from `jsds-sports/YYYY-NNN-lastname-GHusername reviewer1-minor-edits` to `jsds-sports/YYYY-NNN-lastname-GHusername main` (using the suggestions feature).
     - Assign the author as **Assignee**. In this case the author is reviewing the AE's proposed edits, so also request the author's review. The AE still merges.
 
 ### Revision Phase {#sec-revise}
@@ -108,14 +107,14 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 - Author edits the journal organization repo, not their own repo. 
     - Commits should be linked to Issues.
 - For each Issue, the author
-    - Creates a new branch on the JSDSS repo `jsds-sports/2026-001-lastname-GHusername` to address that Issue, and makes edits on that branch.
-    - Creates a pull request from the branch to `jsds-sports/2026-001-lastname-GHusername main` and can send commits to this branch as they see fit (may need to **Change Base**)
+    - Creates a new branch on the JSDSS repo `jsds-sports/YYYY-NNN-lastname-GHusername` to address that Issue, and makes edits on that branch.
+    - Creates a pull request from the branch to `jsds-sports/YYYY-NNN-lastname-GHusername main` and can send commits to this branch as they see fit
     - Ensures that all feedback from the Issue is addressed in the pull request.
 - After the pull request is opened, the AE sets GitHub roles:
     - **Reviewers:** the peer reviewers for that Issue (not the authors).
     - **Assignees:** the authors. The AE assigns the lead author; the lead author may then assign a co-author if desired. 
 - The author repeats for each Issue. If there are 5 Issues there will be 5 branches and 5 pull requests.
-- If the GitHub Actions script works, all assigned Reviewers have approved, and the AE is satisfied, the AE merges the pull request. Otherwise, the review (@sec-review) and/or revision (@sec-revise) phases may be repeated until the AE is satisfied.
+- GitHub Actions must succeed for a pull request to merge. If Actions succeeds, all assigned Reviewers have approved, and the AE is satisfied, the AE merges the pull request. Otherwise, the review and/or revision phases may be repeated until the AE is satisfied.
 - After all pull requests are merged, AE creates an `R1` release.
 
 Note that the following GitHub Settings are enabled by default: 
@@ -138,7 +137,7 @@ Note that the following GitHub Settings are enabled by default:
 - Editor adds watermark and logo to the paper for authenticity.
 - Editor creates a `final` release and the repo is frozen.
 - AE changes the journal repo from Private to Public.
-- GitHub Pages is turned **ON** and the paper is available in HTML/PDF/Word formats at `https://jsds-sports.github.io/2026-001-lastname-GHusername/`.
+- GitHub Pages is turned **ON** and the paper is available in HTML/PDF/Word formats at `https://jsds-sports.github.io/YYYY-NNN-lastname-GHusername/`.
 - Editor adds that URL and paper metadata to the `jsds-sports.github.io` main website.
 - Editor adds PDF of the paper to Project Euclid.  
 - Paper is now available via Project Euclid and the GitHub Pages site.
