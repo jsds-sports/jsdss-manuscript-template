@@ -10,7 +10,7 @@ This is the Associate Editor (AE) view of the review process. The full process i
 - Read the paper and decide whether it merits a full review.
     - If not, recommend **Reject** without further review.
     - If it does, assign **at least two** peer reviewers to read the PDF and submit written feedback.
-- Wait for the reviewers to submit their feedback in writing.
+- Wait for the reviewers to submit their feedback in writing via JSDSS website.
 - Combine the reviewers' feedback with your own and make *exactly one* recommendation:
     - **Reject**: no viable path to publication.
     - **Revise and resubmit**: a path exists, but substantive problems must be fixed before GitHub review.
