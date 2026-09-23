@@ -97,9 +97,9 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 - **Main comments:** AE collates comments from reviewers posted in OJS and creates [GitHub Issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues) for more substantive feedback.
     - One Issue per main comment (could be from multiple reviewers).
     - One Issue for all typos and minor suggestions.
-    - AE assigns Issues to the author, reviewer(s) that gave feedback related to that Issue, and themself.
-- **Minor edits:** At any time throughout this process, the AE (and other reviewers) can send simple, non-controversial minor edits back to the author via a pull request from `jsds-sports/YYYY-NNN-lastname-GHusername reviewer1-minor-edits` to `jsds-sports/YYYY-NNN-lastname-GHusername main` (using the suggestions feature).
-    - Assign the author as **Assignee**. In this case the author is reviewing the AE's proposed edits, so also request the author's review. The AE still merges.
+    - AE assigns Issues to the authors, the reviewer(s) that raised the issue, and themself. 
+- **Minor edits:** At any time throughout this process, the AE (and other reviewers) can send simple, non-controversial minor edits back to the author via a pull request on `jsds-sports/YYYY-NNN-lastname-GHusername`, from a branch such as `reviewer1-minor-edits` to `main` (using the suggestions feature).
+    - Assign the author as **Assignee**. In this case the author is reviewing the AE's proposed edits, so also assign the author as a Reviewer.  The AE still merges any pull requests after approval.
 
 ### Revision Phase {#sec-revise}
 
@@ -107,8 +107,8 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 - Author edits the journal organization repo, not their own repo. 
     - Commits should be linked to Issues.
 - For each Issue, the author
-    - Creates a new branch on the JSDSS repo `jsds-sports/YYYY-NNN-lastname-GHusername` to address that Issue, and makes edits on that branch.
-    - Creates a pull request from the branch to `jsds-sports/YYYY-NNN-lastname-GHusername main` and can send commits to this branch as they see fit
+    - Creates a new branch on `jsds-sports/YYYY-NNN-lastname-GHusername` to address that Issue, and makes edits on that branch.
+    - Creates a pull request from that branch to `main` and can send commits to this branch as they see fit.
     - Ensures that all feedback from the Issue is addressed in the pull request.
 - After the pull request is opened, the AE sets GitHub roles:
     - **Reviewers:** the peer reviewers for that Issue (not the authors).
