@@ -29,4 +29,4 @@ If the paper is invited to GitHub review:
 
 ## Decision
 
-- Wait for the AE to recommend **Reject** (the paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them) or **Accept** (all issues have been addressed by the authors; the paper is ready for publication), and for the Editor to decide.
+- Wait for the AE to recommend **Decline** (the paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them) or **Accept** (all issues have been addressed by the authors; the paper is ready for publication), and for the Editor to decide.
