@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
     <meta name="author" content="JSDSS Editorial Board">
-    <meta name="dcterms.date" content="2026-07-11">
+    <meta name="dcterms.date" content="2026-08-21">
 
     <title>JSDSS Author Submission and Review Process</title>
     <style>
@@ -170,7 +170,7 @@
                 <div>
             <div class="quarto-title-meta-heading">Published</div>
             <div class="quarto-title-meta-contents">
-              <p class="date">July 11, 2026</p>
+              <p class="date">August 21, 2026</p>
             </div>
           </div>
           
@@ -217,7 +217,8 @@
 </div>
 <main class="content quarto-banner-title-block" id="quarto-document-content">      
 
-       <section id="author-submission" class="level2" data-number="1">
+       <p>Role-specific checklists: <a href="instructions-authors.md">authors</a> · <a href="instructions-reviewers.md">reviewers</a> · <a href="instructions-aes.md">associate editors</a></p>
+<section id="author-submission" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="author-submission"><span class="header-section-number">1</span> Author Submission</h2>
 <section id="sec-prepare" class="level3" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="sec-prepare"><span class="header-section-number">1.1</span> Prepare manuscript</h3>
@@ -278,7 +279,7 @@ Warning
 <ul>
 <li>An Editor will read the paper and determine if it is appropriate for <em>JSDSS</em>.
 <ul>
-<li>If the paper not appropriate, it will be <strong>rejected</strong> without further review.</li>
+<li>If the paper is not appropriate, it will be <strong>rejected</strong> without further review.</li>
 <li>If the paper is appropriate, the Editor will assign an Associate Editor to handle the review.</li>
 </ul></li>
 </ul>
@@ -286,7 +287,7 @@ Warning
 <section id="associate-editor-ae-review" class="level3" data-number="2.2">
 <h3 data-number="2.2" class="anchored" data-anchor-id="associate-editor-ae-review"><span class="header-section-number">2.2</span> Associate Editor (AE) review</h3>
 <ul>
-<li>An <a href="link%20to%20editorial%20board">Associate Editor</a> will read the paper and determine if it merits a full review <em>JSDSS</em>.
+<li>An <a href="https://jsds-sports.github.io/#associate-editors">Associate Editor</a> will read the paper and determine if it merits a full review in <em>JSDSS</em>.
 <ul>
 <li>If the paper does not merit a full review, it will be <strong>rejected</strong> without further review.</li>
 <li>If the paper does merit a full review, the AE will assign <strong>at least two</strong> peer reviewers to read the PDF and submit their feedback in writing.</li>
@@ -325,46 +326,34 @@ Caution
 <section id="sec-github-init" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="sec-github-init"><span class="header-section-number">3</span> Initiation of GitHub Review</h2>
 <ul>
-<li>The author is responsible for creating a GitHub repository and putting the paper contents in <em>JSDSS</em> Quarto format, as described in <a href="#sec-prepare" class="quarto-xref">Section&nbsp;1.1</a>. The repo at this point should be private.</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled" title="Brian">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Brian
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>(ZZZ add pro tips, like <code>pandoc</code> code. We should try this first.)</p>
-</div>
-</div>
-<ul>
-<li>The GitHub Actions script that is already part of the template needs to execute correctly. This will be executed automatically when the author pushes changes to the repo on GitHub.</li>
-<li>Upon successful rendering via GitHub Actions in the <strong>author’s</strong> repo, the AE <strong>forks</strong> the author’s repo into the <code>jsds-sports</code> GitHub Organization.
+<li><p>The author is responsible for creating a GitHub repository and putting the paper contents in <em>JSDSS</em> Quarto format, as described in <a href="#sec-prepare" class="quarto-xref">Section&nbsp;1.1</a>. The repo at this point should be private.</p></li>
+<li><p>The GitHub Actions script that is already part of the template needs to execute correctly. This will be executed automatically when the author pushes changes to the repo on GitHub.</p></li>
+<li><p>Upon successful rendering via GitHub Actions in the <strong>author’s</strong> repo, the author invites the AE to the repo.</p></li>
+<li><p>The AE <strong>forks</strong> the author’s repo into the <code>jsds-sports</code> GitHub Organization.</p>
 <ul>
 <li>When forking, uncheck “Copy the main branch only”.</li>
-<li>At this point, the author should create a <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases"><strong>release</strong></a> at the time the repo is forked.</li>
-<li>After it is forked, the author also makes the repo public (perhaps temporarily). This gives the AE the permissions to click the “Change Visibility” button in Settings. This will be used to make the repo public when the article is ready to be published. The AE keeps the visibility private for the duration of the internal review process. The AE won’t change Private to Public until final publication.</li>
-<li>If the author doesn’t want the repo to be public yet, they can immediately Change Visibility to Private again. Otherwise, the author can leave it as Public.</li>
-<li>From this point on, all official reviews and edits will be done in the journal’s version of the repo. The author is welcome to push changes to their personal repo as well, if desired. But all official issues, pull requests, etc., will occur in the journal’s version of the repo.</li>
-<li>AE goes to Settings page
+<li>The journal fork must be <strong>private</strong> when it is created. The AE keeps it private for the duration of the internal review process and does not change it to Public until final publication.</li>
+</ul></li>
+<li><p>After it is forked, the author makes their own repo public (perhaps temporarily). This gives the AE the permissions to click the “Change Visibility” button in Settings on the journal fork. That permission will be used to make the journal repo public when the article is ready to be published.</p>
+<ul>
+<li>If the author doesn’t want their own repo to be public yet, they can immediately Change Visibility to Private again. Otherwise, the author can leave it as Public.</li>
+</ul></li>
+<li><p>From this point on, all official reviews and edits will be done in the journal’s version of the repo. The author is welcome to push changes to their personal repo as well, if desired. But all official issues, pull requests, etc., will occur in the journal’s version of the repo.</p></li>
+<li><p>AE goes to Settings page</p>
 <ul>
 <li>General
 <ul>
 <li>Check that Change Visibility permissions are available. Otherwise, asks author to do the previous step.</li>
-<li>Rename the repo to match the OJS paper ID tracking system (e.g., <code>2026-001-baumer-beannumber</code>).</li>
+<li>Rename the repo to match the OJS paper ID tracking system (e.g., <code>2026-001-lastname-GHusername</code>).</li>
 <li>Enable Issues</li>
-<li>The GitHub Actions script that is already part of the template needs to execute correctly. If so, the previous instructions on Pages and Actions are not needed.</li>
+<li>The GitHub Actions script that is already part of the template needs to execute correctly.</li>
 </ul></li>
 <li>Collaborators and Teams
 <ul>
-<li>Invite Authors as collaborators with direct access and <strong>Write</strong> permissions</li>
+<li>Invite Authors and Reviewers as collaborators with direct access and <strong>Write</strong> permissions</li>
 </ul></li>
 </ul></li>
-<li>AE goes to main repo page and creates an <code>R0</code> release in the forked repo.</li>
-</ul></li>
+<li><p>AE goes to the main page of the journal fork and creates an <code>R0</code> <a href="https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases">release</a>.</p></li>
 </ul>
 </section>
 <section id="sec-github" class="level2" data-number="4">
@@ -376,70 +365,53 @@ Caution
 <ul>
 <li>One Issue per main comment (could be from multiple reviewers).</li>
 <li>One Issue for all typos and minor suggestions.</li>
-<li>AE assigns Issues to the author, reviewer(s) that gave feedback related to that Issue, and themselves.</li>
+<li>AE assigns Issues to the author, reviewer(s) that gave feedback related to that Issue, and themself.</li>
 </ul></li>
-<li><strong>Minor edits:</strong> At any time throughout this process, the AE (and other reviewers) can send simple, non-controversial minor edits back to the author via a pull request from <code>jsds-sports/2026.baumer.736 reviewer1-edits</code> to <code>jsds-sports/2026.baumer.736 main</code> (using the suggestions feature) and adding the author as the reviewer.</li>
+<li><strong>Minor edits:</strong> At any time throughout this process, the AE (and other reviewers) can send simple, non-controversial minor edits back to the author via a pull request from <code>jsds-sports/2026-001-lastname-GHusername reviewer1-edits</code> to <code>jsds-sports/2026-001-lastname-GHusername main</code> (using the suggestions feature).
+<ul>
+<li>Assign the author as <strong>Assignee</strong>. In this case the author is reviewing the AE’s proposed edits, so also request the author’s review. The AE still merges.</li>
+</ul></li>
 </ul>
 </section>
 <section id="sec-revise" class="level3" data-number="4.2">
 <h3 data-number="4.2" class="anchored" data-anchor-id="sec-revise"><span class="header-section-number">4.2</span> Revision Phase</h3>
 <ul>
 <li>Author will respond to GitHub Issues (can ask clarifications, push back, etc.) by comment via the web interface.</li>
-<li>Author edits the original repo on their account.
+<li>Author edits the journal organization repo, not their own repo.
 <ul>
 <li>Commits should be tagged to Issues.</li>
 </ul></li>
 <li>For each Issue, the author
 <ul>
-<li>Creates a new branch on the JSDSS repo <code>jsds-sports/2026-baumer-413</code> to address that Issue, and makes edits on that branch.</li>
-<li>Creates a pull request from the branch to <code>jsds-sports/2026-baumer-413 main</code> and can send commits to this branch as they see fit (may need to <strong>Change Base</strong>)</li>
-<li>Ensures that all feedback from the Issue are addressed in the pull request.<br>
-</li>
-<li>Tags the AE and corresponding reviewers to review the pull request.</li>
+<li>Creates a new branch on the JSDSS repo <code>jsds-sports/2026-001-lastname-GHusername</code> to address that Issue, and makes edits on that branch.</li>
+<li>Creates a pull request from the branch to <code>jsds-sports/2026-001-lastname-GHusername main</code> and can send commits to this branch as they see fit (may need to <strong>Change Base</strong>)</li>
+<li>Ensures that all feedback from the Issue is addressed in the pull request.</li>
 </ul></li>
-<li>The author repeats for each Issue. If there are 5 Issues there will be 5 brances and 5 pull requests.</li>
-</ul>
-<div class="callout callout-style-default callout-note callout-titled" title="Brian">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Brian
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>(ZZZ maybe move down? See first comment in #3)</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Ben">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Ben
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>I’m not sure that one-to-one correspondence is necessary/optimal. Small sets of issues could be in the same pull request, no?</p>
-</div>
-</div>
+<li>After the pull request is opened, the AE sets GitHub roles:
 <ul>
-<li>If the GitHub Actions script works, and the AE is satisfied, AE merges the pull request and creates an <code>R1</code> release.</li>
+<li><strong>Reviewers:</strong> the peer reviewers for that Issue (not the authors).</li>
+<li><strong>Assignees:</strong> the authors. The AE assigns the lead author; the lead author may then assign a co-author if desired.</li>
+</ul></li>
+<li>The author repeats for each Issue. If there are 5 Issues there will be 5 branches and 5 pull requests.</li>
+<li>If the GitHub Actions script works, all assigned Reviewers have approved, and the AE is satisfied, the AE merges the pull request. Otherwise, the review (<a href="#sec-review" class="quarto-xref">Section&nbsp;4.1</a>) and/or revision (<a href="#sec-revise" class="quarto-xref">Section&nbsp;4.2</a>) phases may be repeated until the AE is satisfied.</li>
+<li>After all pull requests are merged, AE creates an <code>R1</code> release.</li>
+</ul>
+<p>Note that the following GitHub Settings are enabled by default:</p>
+<ul>
+<li>Only AEs can merge PRs.</li>
+<li>Required Approvals is set to 1, but the AE should check that all Reviewers assigned to that PR have approved.</li>
+<li>If a commit is made after an approval has been given, that approval is stale and the PR needs to be re-approved by Reviewers</li>
 </ul>
 </section>
 <section id="review-and-revise-phase-iteration" class="level3" data-number="4.3">
 <h3 data-number="4.3" class="anchored" data-anchor-id="review-and-revise-phase-iteration"><span class="header-section-number">4.3</span> Review and revise phase iteration</h3>
 <ul>
-<li>AE makes <em>exactly one</em> of the follwing recommendations to Editor:
+<li>AE makes <em>exactly one</em> of the following recommendations to Editor:
 <ul>
-<li><strong>Reject</strong>: The paper has fatal flaws that prevent publication in <em>JSDSS</em></li>
-<li><strong>Revise and resubmit</strong>: Continue the review process</li>
-<li><strong>Accept</strong>: The paper is ready for publication</li>
+<li><strong>Reject</strong>: The paper has fatal flaws that prevent publication in <em>JSDSS</em>, and authors do not want to fix them.</li>
+<li><strong>Accept</strong>: The paper is ready for publication.</li>
 </ul></li>
 <li>The Editor will make a decision based on the AE’s recommendation.</li>
-<li>The review (<a href="#sec-review" class="quarto-xref">Section&nbsp;4.1</a>) and revision (<a href="#sec-revise" class="quarto-xref">Section&nbsp;4.2</a>) phases may be repeated until the Editor is satisfied.</li>
 </ul>
 </section>
 </section>
@@ -450,27 +422,12 @@ Caution
 <li>Editor obtains a DOI for the paper.</li>
 <li>Editor adds watermark and logo to the paper for authenticity.</li>
 <li>Editor creates a <code>final</code> release and the repo is frozen.</li>
-<li>GitHub Pages is turned <strong>ON</strong> and the paper is available in HTML/PDF/Word formats at <code>https://jsds-sports.github.io/2026-baumer-413/</code>.</li>
+<li>GitHub Pages is turned <strong>ON</strong> and the paper is available in HTML/PDF/Word formats at <code>https://jsds-sports.github.io/2026-001-lastname-GHusername/</code>.</li>
 <li>Editor adds that URL and paper metadata to the <code>jsds-sports.github.io</code> main website.</li>
 <li>Editor adds PDF of the paper to Project Euclid.<br>
 </li>
 <li>Paper is now available via Project Euclid and the GitHub Pages site.</li>
 </ul>
-<div class="callout callout-style-default callout-note callout-titled" title="Brian">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Brian
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>ZZZ may need to include something about checking OJS and availability on OJS</li>
-</ul>
-</div>
-</div>
 </section>
      </main>
 <!-- /main column -->  <script id="quarto-html-after-body" type="application/javascript">
