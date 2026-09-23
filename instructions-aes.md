@@ -17,7 +17,9 @@ This is the Associate Editor (AE) view of the review process. The full process i
     - **Invite to GitHub Review Process**: a path exists for publication of this manuscript and you want a deeper review.
 - Wait for the Editor to decide.
 
-An invitation to GitHub review is **not** a conditional acceptance. **Reject** and **Invite to GitHub Review Process** are terminal initial-review decisions. **Revise and resubmit** may happen more than once. If it does, the author revises and resubmits the PDF; you may ask the reviewers to read the later PDF.
+An invitation to GitHub review is **not** a conditional acceptance. 
+**Decline** and **Invite to GitHub Review Process** are terminal initial-review decisions. 
+**Request revisions** may happen more than once. If it does, the author revises and resubmits the PDF; you may ask the reviewers to read the later PDF.
 
 ## Start GitHub review
 
