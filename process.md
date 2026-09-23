@@ -9,11 +9,11 @@ Role-specific checklists: [authors](instructions-authors.md) · [reviewers](inst
 
 ## Author Submission
 
-### Prepare manuscript {#sec-prepare}
+### Prepare manuscript 
 
-::: {.callout-tip}
+
 **We strongly recommend the following workflow for authors.**
-:::
+
 
 - Create a new repo in **your** GitHub account using the template repository: [`jsds-sports/jsdss-manuscript-template`](https://github.com/jsds-sports/jsdss-manuscript-template).
     - Go to: <https://github.com/jsds-sports/jsdss-manuscript-template>
@@ -27,11 +27,11 @@ Role-specific checklists: [authors](instructions-authors.md) · [reviewers](inst
 - Include a URL for the repo in the Acknowledgement section, or add editor as a collaborator to repo
 - Generate PDF
 
-::: {.callout-warning}
 
-Alternatively, authors can choose to submit a PDF created in another manner. However, note that using [our template](https://github.com/jsds-sports/jsdss-manuscript-template) will eventually be required before publication if your manuscript proceeds along the review process and into the [GitHub review stage](#sec-github). 
 
-:::
+Alternatively, authors can choose to submit a PDF created in another manner. However, note that using [our template](https://github.com/jsds-sports/jsdss-manuscript-template) will eventually be required before publication if your manuscript proceeds along the review process and into the GitHub review stage. 
+
+
 
 ### Submit PDF
 
@@ -47,7 +47,7 @@ Alternatively, authors can choose to submit a PDF created in another manner. How
 
 ### Associate Editor (AE) review
 
-- An [Associate Editor](https://jsds-sports.github.io/#associate-editors) will read the paper and determine if it merits a full review in *JSDSS*. 
+- An [Associate Editor](https://journals.charlotte.edu/jsdss/about/editorialTeam) will read the paper and determine if it merits a full review in *JSDSS*. 
     - If the paper does not merit a full review, it will be **declined** without further review. 
     - If the paper does merit a full review, the AE will assign **at least two** peer reviewers to read the PDF and submit their feedback in writing.
 - The AE will combine the reviewers' feedback and their own and come to *exactly one* of the following recommendations:
@@ -56,11 +56,7 @@ Alternatively, authors can choose to submit a PDF created in another manner. How
     - **Invite to [GitHub Review Process](#sec-github-init)**: The AE sees a path to publication and wishes to initiate a deeper review. 
 - The Editor will make a decision based on the AE's recommendation. 
 
-::: {.callout-caution}
-
 An invitation to the GitHub Review Process is **not** a conditional acceptance. 
-
-:::
 
 ### Author decision
 
@@ -69,7 +65,7 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 - A decision of **Decline** or **Invite to GitHub Review Process** is terminal. 
 
 
-## Initiation of GitHub Review {#sec-github-init}
+## Initiation of GitHub Review 
 
 - The author is responsible for creating a GitHub repository and putting the paper contents in *JSDSS* Quarto format, as described in @sec-prepare. The repo at this point should be private.
 - The GitHub Actions script that is already part of the template needs to execute correctly. This will be executed automatically when the author pushes changes to the repo on GitHub.
