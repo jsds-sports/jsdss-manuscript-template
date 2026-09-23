@@ -9,7 +9,7 @@ This is the reviewer view of the review process. The full process is in [process
 - Read the PDF and submit your feedback in writing in OJS.
 - Wait for the AE to combine the reviews and recommend **Decline**, **Request Revisions**, or **Invite to GitHub Review Process**, and for the Editor to decide.
 
-If the decision is **Decline**, you are done. If it is **Request Revision**, wait for the AE to ask you to read a later PDF, if they do.
+If the decision is **Decline**, you are done. If it is **Request Revisions**, wait for the AE to ask you to read a later PDF, if they do.
 
 An invitation to GitHub review is **not** a conditional acceptance.
 
