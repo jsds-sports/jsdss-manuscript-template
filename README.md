@@ -29,4 +29,4 @@ Alternatively, authors can choose to submit a PDF created in another manner. How
 
 ### Submit PDF
 
-- Submit PDF to the [OJS system at Charlotte](https://journals.charlotte.edu/)
+- Follow the [Submit PDF steps in the canonical instructions](instructions-all.md#submit-pdf), including registration and OJS submission.

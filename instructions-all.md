@@ -35,8 +35,8 @@ Alternatively, authors can choose to submit a PDF created in another manner. How
 
 ### Submit PDF
 
-- Register for *JSDSS* by sending an email to jsds dot sports at gmail dot com.
-- Submit PDF to the [OJS system at Charlotte](https://journals.charlotte.edu/)
+- Register for *JSDSS* by sending an email to jsds dot sports at gmail dot com with your full name, manuscript title, and preferred contact email.
+- Submit PDF to the [*JSDSS* OJS site](https://journals.charlotte.edu/index.php/jsdss/index)
 
 ## *JSDSS* Initial Review Process
 
