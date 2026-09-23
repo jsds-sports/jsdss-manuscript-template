@@ -27,7 +27,7 @@ You may submit a PDF produced another way. The [Quarto template](https://github.
 If you are invited and choose to continue:
 
 - Put the paper in *JSDSS* Quarto format in a GitHub repo, as in the prepare step, if you haven't already. Keep that repo private.
-- Push to GitHub so that the template GitHub Actions workflow renders successfully.
+- Push to GitHub. Hopefully the GitHub Actions workflow renders successfully. If not, you can fix this later.
 - Invite the AE to your repo.
 - Wait for the AE to fork your repo into the `jsds-sports` organization (the journal fork stays **private**).
 - After the fork exists, make **your** repo public (you may switch it back to private immediately). This lets the AE use **Change Visibility** on the journal fork at publication.
@@ -48,6 +48,7 @@ From this point, do all official work on the journal fork. You may still push to
 - After each pull request is open, wait for the AE to set **Reviewers** (the peer reviewers) and **Assignees** (you). If you are the lead author, you may then assign a co-author.
 - Wait for the assigned Reviewers to approve. If you push a commit after an approval, that approval is stale; wait for the Reviewers to approve again.
 - Wait for the AE to merge. Only AEs merge pull requests. If the AE is not yet satisfied, the review and/or revision steps may repeat until they are.
+- If Github Actions workflow runs successfully, that's great! Otherwise, some steps may need to be taken to ensure the .qmd document generates the final document. See Actions tab in GitHub.
 - Wait for the AE to create an `R1` release after all pull requests are merged.
 
 ## Decision
