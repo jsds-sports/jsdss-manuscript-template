@@ -42,7 +42,7 @@ Each of these three documents should include "Wait for so-and-so to do such-and-
 - Only that role's actions, plus Wait for lines for everyone else (Editor, AE, reviewers, authors).
 - Every handoff is a Wait for line: Wait for [role] to [action]. Do not bold Wait for.
 - Link back to [process.md](../../../process.md) at the top.
-- Keep the same decision vocabulary: **Reject**, **Revise and resubmit**, **Invite to GitHub Review Process**, **Accept**.
+- Keep the same decision vocabulary: **Decline**, **Request Revisions**, **Invite to GitHub Review Process**, **Accept**.
 - Keep GitHub names: journal fork in `jsds-sports`, `R0` / `R1` / `final`, Reviewers vs Assignees, only AEs merge.
 
 ## After editing process.md

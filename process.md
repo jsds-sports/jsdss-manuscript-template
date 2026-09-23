@@ -42,17 +42,17 @@ Alternatively, authors can choose to submit a PDF created in another manner. How
 ### Editor review
 
 - An Editor will read the paper and determine if it is appropriate for *JSDSS*. 
-    - If the paper is not appropriate, it will be **rejected** without further review. 
+    - If the paper is not appropriate, it will be **declined** without further review. 
     - If the paper is appropriate, the Editor will assign an Associate Editor to handle the review.
 
 ### Associate Editor (AE) review
 
 - An [Associate Editor](https://jsds-sports.github.io/#associate-editors) will read the paper and determine if it merits a full review in *JSDSS*. 
-    - If the paper does not merit a full review, it will be **rejected** without further review. 
+    - If the paper does not merit a full review, it will be **declined** without further review. 
     - If the paper does merit a full review, the AE will assign **at least two** peer reviewers to read the PDF and submit their feedback in writing.
 - The AE will combine the reviewers' feedback and their own and come to *exactly one* of the following recommendations:
-    - **Reject**: The paper does not have a viable path to publication in *JSDSS*.
-    - **Revise and resubmit**: The AE sees a path to publication, but the paper has substantive shortcomings that need to be addressed before any potential GitHub Review Process is initiated. 
+    - **Decline**: The paper does not have a viable path to publication in *JSDSS*.
+    - **Request Revisions**: The AE sees a path to publication, but the paper has substantive shortcomings that need to be addressed before any potential GitHub Review Process is initiated. 
     - **Invite to [GitHub Review Process](#sec-github-init)**: The AE sees a path to publication and wishes to initiate a deeper review. 
 - The Editor will make a decision based on the AE's recommendation. 
 
@@ -65,8 +65,8 @@ An invitation to the GitHub Review Process is **not** a conditional acceptance.
 ### Author decision
 
 - Based on the Editor's decision and the AE and reviewer feedback, the author may choose to continue the review process, or withdraw the paper. 
-- A decision of **Revise and resubmit** could occur more than once. The author revises the PDF and resubmits. The AE may ask the reviewers to read the later PDF.
-- A decision of **Reject** or **Invite to GitHub Review Process** is terminal. 
+- A decision of **Request Revisions** could occur more than once. The author revises the PDF and resubmits. The AE may ask the reviewers to read the later PDF.
+- A decision of **Decline** or **Invite to GitHub Review Process** is terminal. 
 
 
 ## Initiation of GitHub Review {#sec-github-init}
@@ -130,7 +130,7 @@ Note that the following GitHub Settings are enabled by default:
 ### Review and revise phase iteration
 
 - AE makes *exactly one* of the following recommendations to Editor:
-    - **Reject**: The paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them.
+    - **Decline**: The paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them.
     - **Accept**: All issues have been addressed by the authors. The paper is ready for publication.
 - The Editor will make a decision based on the AE’s recommendation.
 

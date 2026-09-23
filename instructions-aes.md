@@ -14,7 +14,7 @@ This is the Associate Editor (AE) view of the review process. The full process i
 - Combine the reviewers' feedback with your own and make *exactly one* recommendation:
     - **Reject**: no viable path to publication.
     - **Revise and resubmit**: a path exists, but substantive problems must be fixed before GitHub review.
-    - **Invite to GitHub Review Process**: a path exists and you want a deeper review.
+    - **Invite to GitHub Review Process**: a path exists for publication of this manuscript and you want a deeper review.
 - Wait for the Editor to decide.
 
 An invitation to GitHub review is **not** a conditional acceptance. **Reject** and **Invite to GitHub Review Process** are terminal initial-review decisions. **Revise and resubmit** may happen more than once. If it does, the author revises and resubmits the PDF; you may ask the reviewers to read the later PDF.
@@ -23,7 +23,7 @@ An invitation to GitHub review is **not** a conditional acceptance. **Reject** a
 
 If the Editor invites the paper and the author continues:
 
-- Wait for the author to put the paper in *JSDSS* Quarto format in a private GitHub repo, for GitHub Actions on **their** repo to render successfully, and for the author to invite you to that repo.
+- Wait for the author to put the paper in *JSDSS* Quarto format in a private GitHub repo, for GitHub Actions on **their** repo to render successfully, and for the author to invite you to that repo. The authors can ask for assistance in getting the paper into the appropriate format.
 - Fork the author's repo into the `jsds-sports` organization.
     - Uncheck "Copy the main branch only".
     - The journal fork must be **private** when created. Keep it private until final publication.
@@ -45,7 +45,7 @@ All official Issues and pull requests happen on the journal fork.
 
 ## Revision phase
 
-- Wait for the author to respond on the Issues and to open one pull request per Issue on `jsds-sports/2026-001-lastname-GHusername` (edits on the journal repo, commits linked to Issues).
+- Wait for the author to respond on the Issues and to open one pull request per Issue on `jsds-sports/YYYY-NNN-lastname-GHusername` (edits on the journal repo, commits linked to Issues).
 - After each pull request is opened, set GitHub roles:
     - **Reviewers:** the peer reviewers for that Issue (not the authors).
     - **Assignees:** the authors. Assign the lead author; they may assign a co-author.
