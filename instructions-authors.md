@@ -19,7 +19,7 @@ You may submit a PDF produced another way. The [Quarto template](https://github.
 
 - Wait for the Editor's decision, either **Decline**, **Request Revisions**, or **Invite to GitHub Review Process**. Then you may continue or withdraw.
 - **Request revisions** can happen more than once. If you continue, revise the PDF, resubmit, and wait for the Editor again.
-- **Reject** and **Invite to GitHub Review Process** are terminal initial-review decisions.
+- **Decline** and **Invite to GitHub Review Process** are terminal initial-review decisions.
 - An invitation to GitHub review is **not** a conditional acceptance.
 
 ## Start GitHub review
