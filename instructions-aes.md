@@ -58,7 +58,7 @@ All official Issues and pull requests happen on the journal fork.
 
 ## Decision
 
-- Make *exactly one* recommendation to the Editor: **Reject** (the paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them) or **Accept** (all issues have been addressed by the authors; the paper is ready for publication).
+- Make *exactly one* recommendation to the Editor: **Decline** (the paper has fatal flaws that prevent publication in *JSDSS*, and authors do not want to fix them) or **Accept** (all issues have been addressed by the authors; the paper is ready for publication).
 - Wait for the Editor to decide.
 
 ## Production
