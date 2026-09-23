@@ -12,7 +12,7 @@ This is the Associate Editor (AE) view of the review process. The full process i
     - If it does, assign **at least two** peer reviewers to read the PDF and submit written feedback.
 - Wait for the reviewers to submit their feedback in writing via JSDSS website.
 - Combine the reviewers' feedback with your own and make *exactly one* recommendation:
-    - **Reject**: no viable path to publication.
+    - **Decline**: no viable path to publication.
     - **Revise and resubmit**: a path exists, but substantive problems must be fixed before GitHub review.
     - **Invite to GitHub Review Process**: a path exists for publication of this manuscript and you want a deeper review.
 - Wait for the Editor to decide.
