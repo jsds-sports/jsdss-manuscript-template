@@ -9,7 +9,7 @@ As we begin to receive submissions, we want to share our plan for integrating ou
 One of the distinct elements of *JSDSS* is that we expect each submission to be reproducible.  
 We have developed a detailed overview of the manuscript review process including the reproducibility assessment which will happen via GitHub.
 Here's a link to the [full review process](https://github.com/jsds-sports/jsdss-manuscript-template/blob/main/instructions-all.md).
-In short, a submission will start with a typical review of content, and only after the reviewers and the AE, are convinced that the submission is credible for publication will the manuscript proceed to the reproducibility/github review.  
+In short, a submission will start with a typical review of content, and only after the reviewers and the AE are convinced that the submission is credible for publication will the manuscript proceed to the reproducibility/GitHub review.  
 An invitation to GitHub review is not a conditional acceptance. 
 
 Comments from reviewers to the authors *may* be made public and attributable to the reviewer by name, if the manuscript goes through to the GitHub review.  
