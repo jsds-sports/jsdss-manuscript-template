@@ -3,7 +3,7 @@
 Dear JSDSS AE,
 
 Thanks again for your willingness to be an Associate Editor for the *Journal of Statistics and Data Science in Sports* (JSDSS).
-We greatly appreciate your efforts as we build JSDSS.  
+We greatly appreciate your efforts as we build *JSDSS*.  
 
 As we begin to receive submissions, we want to share our plan for integrating our Associate Editors (AEs) into the review process.
 One of the distinct elements of JSDSS is that we expect each submission to be reproducible.  
