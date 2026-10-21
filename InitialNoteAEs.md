@@ -12,7 +12,7 @@ Here's a link to the [full review process](https://github.com/jsds-sports/jsdss-
 In short, a submission will start with a typical review of content, and only after the reviewers and the AE are convinced that the submission is credible for publication will the manuscript proceed to the reproducibility/GitHub review.
 An invitation to GitHub review is not a conditional acceptance.
 
-Comments from reviewers to the authors *may* be made public and attributable to the reviewer by name, if the manuscript goes through to the GitHub review.  
+Comments from reviewers to the authors *may* be made public and attributable to the reviewer by name, if the manuscript goes through to the GitHub review.
 Comments to the editors will *never* be public.
 
 During this initial period of the journal, we are planning to have you serve as a reviewer for one or manuscripts so that you can have a thorough understanding of the review process.
