@@ -6,7 +6,8 @@ This is the reviewer view of the review process. The full process is in [instruc
 
 ## Initial review (OJS)
 
-- Read the PDF and submit your feedback in writing on the JSDSS OJS site.
+- Read the PDF and submit your feedback through the JSDSS OJS site.
+- Note that your comments to the authors of the paper may become **public** if the manuscript moves to the GitHub Review Process.  Comments to the editors will **never** become public. 
 - Wait for the AE to combine the reviews and recommend **Decline**, **Request Revisions**, or **Invite to GitHub Review Process**, and for the Editor to decide.
 
 If the decision is **Decline**, you are done. If it is **Request Revisions**, wait for the AE to ask you to read a later PDF, if they do.
