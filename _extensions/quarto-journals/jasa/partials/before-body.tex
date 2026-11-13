@@ -39,6 +39,15 @@ $abstract$
 $if(keywords)$
 \noindent%
 {\it Keywords:} $for(keywords)$$it$$sep$, $endfor$
+
+$endif$
+$if(github)$
+\noindent%
+{\it GitHub:} \url{$github$}
+$endif$
+$if(keywords)$
+\vfill
+$elseif(github)$
 \vfill
 $endif$
 
