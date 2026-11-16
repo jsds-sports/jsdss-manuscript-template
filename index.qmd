@@ -21,8 +21,9 @@ author:
 keywords:
   - La Palma
   - Earthquakes
+github: https://github.com/jsds-sports/my_repo
 abstract: |
-  In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). ...
+  In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). 
 plain-language-summary: |
   Earthquake data for the island of La Palma from the September 2021 eruption is found ...
 key-points:

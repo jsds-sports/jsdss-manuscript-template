@@ -11,6 +11,8 @@ format:
     toc: true
     comments:
       hypothesis: true
+    template-partials:
+      - _extensions/quarto-journals/jasa/partials/title-metadata.html
   jasa-pdf: default
 
 

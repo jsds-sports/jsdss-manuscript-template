@@ -33,5 +33,7 @@ contributes:
       number-sections: true
       toc: true
       theme: custom.scss
+      template-partials:
+        - partials/title-metadata.html
       # Use a CSL file to style (https://www.zotero.org/styles/)
       csl: american-statistical-association.csl
